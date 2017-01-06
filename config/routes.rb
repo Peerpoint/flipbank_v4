@@ -22,4 +22,6 @@ Rails.application.routes.draw do
     get 'how_it_works', to: 'pages#how_it_works'
     
     get 'partners', to: 'pages#partners'
+    
+    resources :contacts
 end
