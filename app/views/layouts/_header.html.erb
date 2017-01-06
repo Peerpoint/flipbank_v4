@@ -16,8 +16,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="nav navbar-nav navbar-right">
-        <a href="/users/sign_in" class="btn btn-primary navbar-btn">Log In</a>
-        <a href="/users/sign_up" class="btn btn-success navbar-btn">Sign Up</a>
+        <%= link_to "Log In", new_user_session_path, class: "btn btn-primary navbar-btn" %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success navbar-btn" %>
       </div>
       <ul class="nav navbar-nav navbar-right">
           <li class="navtext"><%= link_to 'Why FlipBank?', why_flipbank_path %></li>
@@ -25,8 +25,6 @@
           <li class="navtext"><%= link_to 'How It Works', how_it_works_path %></li>
           <li class="navtext"><%= link_to 'Partners', partners_path %></li>
           <li class="navtext"><%= link_to "Contact Us", new_contact_path %></li>
-          <li><%#= link_to '<button type="button" class="btn btn-primary">Create Account</button>'.html_safe, about_path %></li>
-          <li><%#= link_to '<button type="button" class="btn btn-success">Login</button>'.html_safe, about_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
