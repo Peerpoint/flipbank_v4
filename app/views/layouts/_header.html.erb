@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "/", class: "navbar-brand" do %>
+          <%= image_tag("FLIPBANK_1.png", size: "202x45") %>
+      <% end %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li class="navtext"><%= link_to 'Why FlipBank?'.html_safe, why_flipbank_path %></li>
+          <li class="navtext"><%= link_to 'Programs'.html_safe, programs_path %></li>
+          <li class="navtext"><%= link_to 'How It Works'.html_safe, how_it_works_path %></li>
+          <li class="navtext"><%= link_to 'Partners'.html_safe, partners_path %></li>
+          <li class="navtext"><%= link_to 'Contact Us'.html_safe, partners_path %></li>
+          <li><%= link_to '<button type="button" class="btn btn-primary">Create Account</button>'.html_safe, about_path %></li>
+          <li><%= link_to '<button type="button" class="btn btn-success">Login</button>'.html_safe, about_path %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

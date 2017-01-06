@@ -14,6 +14,28 @@
  *= require_self
  */
  
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ 
  h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar Header1 */
+
+.navbar-brand {
+        margin-top: -8px;
+}
+.navbar {
+        border-radius: 0;
+        border-width: 0;
+        background-color: #EFEFEF;
+  }
+.nav button {
+        margin-top: 0px;
+}
+.navtext {
+        margin-top: 8px;
 }
