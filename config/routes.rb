@@ -23,5 +23,7 @@ Rails.application.routes.draw do
     
     get 'partners', to: 'pages#partners'
     
+    get 'contact-us', to: 'contacts#new'
+    
     resources :contacts
 end
