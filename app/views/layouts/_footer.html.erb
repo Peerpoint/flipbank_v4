@@ -1,0 +1,62 @@
+<!--Social Media--> 	
+  <div class="social">
+    <h3>Why Keep Us a Secret? SHARE us with your friends!</h3>
+  	<ul>
+  	  <li><%=link_to image_tag("facebook.png"), "https://www.facebook.com/Flipbank-765050520297244/?skip_nax_wizard=true" %> </li>
+  		<li><%=link_to image_tag("twitter.png"), "http://www.twitter.com/flipbank_usa" %> </li>
+  		<li><%=link_to image_tag("youtube.png"), "https://www.youtube.com/channel/UCOsXvyuqfPhTpn0zxWuiqoQ?guided_help_flow=3" %> </li>
+  		<li><%=link_to image_tag("instagram.png"), "http://www.instagram.com/flipbank_usa" %> </li>
+  		<li><%=link_to image_tag("snapchat-48.png"), "http://www.snapchat.com/flipbank" %> </li>
+  		<li><%=link_to image_tag("linkedin.png"), "http://www.linkedin.com/company/flipbank/" %> </li>
+
+  	</ul>
+  </div>
+  
+  <!--Footer-->
+  	<div class="mainfoot container">
+  	<div class="row">
+  	<div class="col-md-3 col-xs-12">
+  		<ul>
+  			<li><strong>FUNDING OPTIONS</strong></li><hr><br>
+  			<li><%= link_to 'Rehab Loans', products_path %></li><br>
+  			<li><%= link_to 'Bridge Funding', products_path %></li><br>
+  			<li><%= link_to 'Term Lending', products_path %></li><br>
+  			<li><%= link_to 'Blanket Loans', products_path %></li><br>
+  			<li><%= link_to 'Knowledge Center', knowledge_path %></li>
+  		</ul>
+  	</div>
+  	
+  	<div class="col-md-2 col-xs-12">
+  		<ul>
+  			<li><strong>ABOUT US</strong></li><hr><br>
+  			<li><%= link_to 'Our Process', about_path %></li><br>
+  			<li><%= link_to 'Projects', about_path %></li><br>
+  			<li><%= link_to 'FAQ', about_path %></li><br>
+  			<li><%= link_to 'Careers', careers_path %></li><br>
+  			<li><%= link_to 'Blog', about_path %></li>
+  		</ul>
+  	</div>
+  	
+  	<div class="col-md-3 col-xs-12">
+  		<ul>
+  			<li><strong>PARTNER WITH US</strong></li><hr><br>
+  			<li><%= link_to 'Brokers', partners_path %></li><br>
+  			<li><%= link_to 'Investors', partners_path %></li><br>
+  			<li><%= link_to 'Marketplace', about_path %></li><br>
+  			<li><%= link_to 'Current Listings', about_path %></li><br>
+  			<li><%= link_to 'FlipBank Analyzer', about_path %></li>
+  		</ul>
+  	</div>
+  	
+  	<div class="foothead col-md-4 col-xs-12">
+  		<ul>
+  			<li><strong>GET STARTED</strong></li><hr><br>
+  			<li><a href="#"><span class="fa fa-mobile">&nbsp;1-844-FLIPBANK</span></a></li><br>
+  			<li><a href="#"><span class="fa fa-envelope-o">&nbsp;info@flipbankusa.com</span></a></li><br>
+  			<li><a href="#"><span class="fa fa-comment">&nbsp;Live Chat</span></a></li><br>
+  			<%= link_to '<button type="button" class="btn btn-lg">APPLY NOW</button>'.html_safe, about_path %>
+  		</ul>
+  	</div>
+  	
+  	</div>
+  	</div><!--close footer-->
