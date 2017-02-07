@@ -33,5 +33,8 @@ class PagesController < ApplicationController
     end
   
     def partners
-    end  
+    end 
+    
+    def practice
+    end    
 end
