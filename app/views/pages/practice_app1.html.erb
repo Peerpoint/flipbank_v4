@@ -1,0 +1,440 @@
+<%= render 'layouts/header_app' %>
+
+<section class="appPage">
+  <div class="container">
+    
+    <!--STEP 1 Profile-->
+    <div class="row">
+        <div class="col-md-3 statusBar">
+              <ul>
+                <li>IMG % Complete</li><br>
+                <li>Profile</li><br>
+                <li>Experience</li><br>
+                <li>Property Info</li><br>
+                <li>Deal Structure</li><br>
+                <li>Summary</li>
+              </ul>
+        </div>
+        <div class="col-md-9 mainBody">
+          <h1>This will be quick and easy!</h1>
+          <p>Just tell us a little more about yourself.</p>
+        <form>
+          <div class="form-group">
+            <div class="col-md-5">
+              <label for="exampleInputEmail1">Legal First Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div> 
+            <div class="col-md-2">
+              <label for="exampleInputEmail1">Middle</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="col-md-5">
+              <label for="exampleInputEmail1">Legal Last Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Date of birth (mm/dd/yyyy)</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="xx/xx/xxxx">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Home Address 1</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Home Address 2</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <div class="col-md-6">
+            <label for="exampleInputPassword1">City</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="col-md-2">
+            <label for="exampleInputPassword1">State</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="col-md-4">
+            <label for="exampleInputPassword1">Zip</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Preferred Email</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="best@email.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Best Phone</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+        </form>
+        </div>
+        </div>
+        <!--Step 2 Experience-->
+        
+        <div class="row">
+        <div class="col-md-3 statusBar">
+              <ul>
+                <li>IMG % Complete</li><br>
+                <li>Your Info</li><br>
+                <li>Property Info</li><br>
+                <li>Deal Structure</li><br>
+                <li>Summary</li>
+              </ul>
+        </div>
+        <div class="col-md-9 mainBody">
+          <h1>Let us know your experience</h1>
+          <p>First time investor? Don't worry. We love working with newbies!</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Number of properties purchased in th last 6 months</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+            <label for="exampleInputEmail1">Number of properties purchased in the last 12 months</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+            <label for="exampleInputEmail1">Number of properties purchased ever</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Average purchase price of properties</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+         
+          <div class="form-group">
+            <label for="exampleInputPassword1">Have you had a property go to foreclosure or short sale?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              No
+            </label>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">If so, please provide the date</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="mm/dd/yyyy">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Bankruptcy discharge date (if applicable)</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="mm/dd/yyyy">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">Number of 60-day delinquencies</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <br>
+          <button type="submit" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+        </form>
+            
+        </div>
+    </div>
+    
+    <!--Step 3 Property Info-->
+        
+        <div class="row">
+        <div class="col-md-3 statusBar">
+              <ul>
+                <li>IMG % Complete</li><br>
+                <li>Your Info</li><br>
+                <li>Property Info</li><br>
+                <li>Deal Structure</li><br>
+                <li>Summary</li>
+              </ul>
+        </div>
+        <div class="col-md-9 mainBody">
+          <h1>Tell us about your deal</h1>
+          <p>Just tell us a little more about yourself.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Property type</label>
+            <select class="form-control">
+              <option>Please select one...</option>
+              <option>Single family</option>
+              <option>Condo</option>
+              <option>Attached PUD</option>
+              <option>Detatched PUD</option>
+              <option>2-4 unit</option>
+              <option>5+ Units</option>
+              <option>Mixed use</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Property Address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div> 
+          <div class="form-group">
+            <div class="col-md-6">
+            <label for="exampleInputEmail1">City</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>  
+          <div class="col-md-2"> 
+            <label for="exampleInputEmail1">State</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="col-md-4">
+            <label for="exampleInputPassword1">Zip</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Do you plan to occupy the property? &nbsp<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="We only fund non-owner occupied properties"></i></label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              No
+            </label>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Loan Type</label>
+            <select class="form-control" id="loanType">
+              <option>Please select one...</option>
+              <option>Purchase</option>
+              <option>Refinance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Will you need rehab funds?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              No
+            </label>
+          </div>
+          </div>
+          if purchase....
+          <div id="purchase" class="purchase box12">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Do you have a signed sales contract?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              No
+            </label>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Contract end date</label>
+            <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="mm/dd/yyyy">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">Any Seller consessions?</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">Contract purchase price</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">As-is property value</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">After repair property value</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          </div>
+          if refi...
+          <div id="refinance" class="refinance box12">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Acquisition date</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="mm/dd/yyyy">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Improvements made since purchase</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Current payoff amount</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Name of current lender</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Original purchase price</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">As-is property value</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">After repair property value</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="$">
+          </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+        </form>
+            
+        </div>
+    </div>
+    
+    <!--Step 4 Deal Structure-->
+        
+        <div class="row">
+        <div class="col-md-3 statusBar">
+              <ul>
+                <li>IMG % Complete</li><br>
+                <li>Your Info</li><br>
+                <li>Property Info</li><br>
+                <li>Deal Structure</li><br>
+                <li>Summary</li>
+              </ul>
+        </div>
+        <div class="col-md-9 mainBody">
+          <h1>What's the deal Structure!</h1>
+          <p>You are almost done.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">How will you hold ownership?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Individual
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Entity
+            </label>
+          </div>
+          </div>
+          If individual...
+          <div class="form-group">
+            <label for="exampleInputEmail1">Legal First Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="auto complete">
+            <label for="exampleInputEmail1">Middle</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="auto complete">
+            <label for="exampleInputEmail1">Legal Last Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Date of birth (mm/dd/yyyy)</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="xx/xx/xxxx">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Home Address 1</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Home Address 2</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">City</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">State</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">Zip</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Preferred Email</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="best@email.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Best Phone</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+        </form>
+            
+        </div>
+    </div>
+    
+    <!--Step 5 Summary-->
+        
+        <div class="row">
+        <div class="col-md-3 statusBar">
+              <ul>
+                <li>IMG % Complete</li><br>
+                <li>Your Info</li><br>
+                <li>Property Info</li><br>
+                <li>Deal Structure</li><br>
+                <li>Summary</li>
+              </ul>
+        </div>
+        <div class="col-md-9 mainBody">
+          <h1>This will be quick and easy!</h1>
+          <p>Just tell us a little more about yourself.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Legal First Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+            <label for="exampleInputEmail1">Middle</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+            <label for="exampleInputEmail1">Legal Last Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Date of birth (mm/dd/yyyy)</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="xx/xx/xxxx">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Home Address 1</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Home Address 2</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">City</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">State</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div><div class="form-group">
+            <label for="exampleInputPassword1">Zip</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Preferred Email</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="best@email.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Best Phone</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-next">Next <i class="fa fa-angle-right"></i></button>
+        </form>
+            
+        </div>
+    </div>
+    
+  </div>  
+</section>
+

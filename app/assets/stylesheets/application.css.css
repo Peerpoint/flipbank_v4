@@ -1,0 +1,52 @@
+/*
+Error: Invalid CSS after "...kground-color: ": expected expression (e.g. 1px, bold), was ";"
+        on line 1013 of /home/ubuntu/workspace/portalapp/app/assets/stylesheets/application.css.scss
+
+1008:     margin-top: 25%;
+1009:     color: #fff;
+1010:     text-shadow: 2px 2px #000;
+1011: }
+1012: .works {
+1013:     background-color: ;
+1014: }
+
+Backtrace:
+/home/ubuntu/workspace/portalapp/app/assets/stylesheets/application.css.scss:1013
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/script/parser.rb:710:in `assert_expr'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/script/parser.rb:75:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:1063:in `sass_script'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:909:in `value!'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:778:in `block in try_declaration'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `rethrow'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:791:in `try_declaration'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/bin/scss:23:in `load'
+/usr/local/rvm/gems/ruby-2.3.0@portalapp/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...kground-color: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 1013 of /home/ubuntu/workspace/portalapp/app/assets/stylesheets/application.css.scss\A \A 1008:     margin-top: 25%;\A 1009:     color: #fff;\A 1010:     text-shadow: 2px 2px #000;\A 1011: }\A 1012: .works {\A 1013:     background-color: ;\A 1014: }"; }

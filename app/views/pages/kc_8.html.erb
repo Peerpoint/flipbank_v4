@@ -1,0 +1,64 @@
+<%= render 'layouts/header' %>
+
+<div class="container text-center">
+    <h1>Knowledge Center</h1>
+    <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+            <p><%= link_to 'Overview', knowledge_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Deal Selection', kc_2_path %></p>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Application', kc_3_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Structure', kc_4_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Scope of Work', kc_5_path %></p>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Inspection', kc_6_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Closing', kc_7_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p>Draws</p><br>
+            <div class="statusbox1"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Exit', kc_9_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+        <div class="col-md-1">
+            <p><%= link_to 'Summary', kc_10_path %></p><br>
+            <div class="statusbox"></div>
+        </div>
+    </div>
+    <div class="tutorbox">
+        <iframe src="https://youtu.be/toVTP-vcsk8" width="800" height="500" align="middle">
+        </iframe>
+    </div>
+    <div class="takeaway">
+        <h4>Key Takeaways</h4>
+        <p>Point #1 - Explaination</p>
+        <p>Point #1 - Explaination</p>
+        <p>Point #1 - Explaination</p>
+        <p>Point #1 - Explaination</p>
+        <br>
+        <p>A thorough explaination on the topic. A thorough explaination on the topic. A thorough explaination on the topic. A thorough explaination on the topic. A thorough explaination on the topic. A thorough explaination on the topic. </p>
+        <br>
+        <%= link_to '<button type="button" class="btn btn-lg btn-deal">GET FUNDING</button>'.html_safe, about_path %>
+    </div>
+</div><br><br><br>
+
+<%= render 'layouts/footer' %>  

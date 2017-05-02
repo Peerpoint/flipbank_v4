@@ -15,3 +15,22 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$("#loanType").change(function(){
+        $(this).find("option:selected").each(function(){
+            if($(this).attr("value")=="purchase"){
+				//alert('purchase');
+                $(".box12").not(".purchase").hide();
+                $(".purchase").show();
+            }
+            else if($(this).attr("value")=="refinance"){
+				//alert('refinance');
+                $(".box12").not(".refinance").hide();
+                $(".refinance").show();
+            }
+            else{
+                $(".box12").hide();
+            }
+        });
+    }).change();
+

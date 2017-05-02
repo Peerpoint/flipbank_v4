@@ -6,15 +6,27 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>window.sr = ScrollReveal();</script>
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    
     <div class="container">
       <% flash.each do |type, msg| %>
         <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
     </div>
     <%= yield %>
+    
+    <script>
+    
+    sr.reveal('.sidebar', {
+        duration: 2000,
+        origin: 'right'
+        distance: '200px'
+    })
+    
+</script>
   </body>
 </html>

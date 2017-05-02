@@ -1,19 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- 
+
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  @import "font-awesome-sprockets";
@@ -37,7 +22,7 @@
         margin-top: 0px;
 }
 .alert-notice {
-  display: none;
+        display: none;
 }
 
 .banner {
@@ -896,4 +881,200 @@ h3.center {
   #entity
 {
     display: none;
+}
+
+.appPage {
+    background-color: #EFEFEF;
+    margin-top: -20px;
+}
+.fa-lock {
+    font-size: 1em;
+    color: #6a7d83;
+}
+.fa-question-circle {
+    font-size: 1em;
+    color: #6a7d83;
+}
+.leadApp {
+    font-size: 1.25em;
+}
+.leadApp1 {
+    color: #6a7d83;
+}
+.navbar-app {
+    background-color: #fff;
+    border-bottom: solid 1px #cbcbcb;
+    padding: 15px 0;
+}
+.secure {
+    padding-top: 15px;
+    color: #6a7d83;
+}
+.phone {
+    text-align: right;
+    padding-right: 20px;
+}
+.mainBody {
+    background-color: #fff;
+    margin-top: 30px;
+    border: solid 1px #cbcbcb;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 480px) {
+    .statusBar {
+        display: none;
+    }
+    .mainBody {
+        margin: 15px;
+    }
+    a.navbar-brand {
+        text-align: center;
+    }
+    .sidebar {
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 30px 20px 100px 30px;
+        background-color: rgba(0, 0, 0, 0.7);
+        filter: alpha(opacity=70);
+ }
+}
+
+.fa-angle-right {
+    color: #fff;
+    font-size: 1.1em;
+}
+.fa-angle-right:hover {
+    color: #0d406c;
+    font-size: 1.1em;
+}
+#purchase, #refinance {
+    display: none;
+}
+.job_board {
+    border-right:  1px solid #cbcbcb;
+    padding-right: 30px;
+}
+.job_sidebar {
+    padding-left: 30px;
+}
+.pull-right {
+    position: relative;
+    float: right;
+}
+.stepbox1,
+.stepbox2,
+.stepbox3,
+.stepbox4 {
+    border: 1px solid #cbcbcb;
+    border-radius: 20%;
+}
+table.summary-table td, table.summary-table th {
+    vertical-align: top;
+    padding: 0 .5em .5em 0;
+}
+.text-right {
+    text-align: right;
+    padding-left: 20px;
+}
+table {
+    display: table;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.fa-folder-open, 
+.fa-video-camera,
+.fa-tv {
+    color: #000;
+    font-size: 1em;
+    padding-right: 10px;
+}
+.main-summary {
+    margin-top: 20px;
+}
+.statusbox {
+    width: 70px;
+    height: 10px;
+    background: #4da1f7;
+    text-align: center;
+}
+.statusbox1 {
+    width: 70px;
+    height: 10px;
+    background: #7DC35D;
+    text-align: center;
+}
+
+
+.tutorbox {
+    margin-top: 30px;
+    padding: 20px;
+}
+.whybanner {
+    background-image: url("learning1.jpg");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	height: 500px;
+  	width: 100%;
+}
+.whybanner h1 {
+    margin-top: 25%;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+.works {
+    background-color: #CEE1EF;
+    padding: 50px 0;
+}
+
+.topbox1 {
+    background-image: url("rehab1.jpg");
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: alpha(opacity=70);
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 10% 20px 0;
+}
+.botbox1 {
+    
+    height: 250px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    padding: 10% 20px 0;
+    background-image: url("rehab2.jpg");
+    filter: alpha(opacity=70);
+}
+.topbox2 {
+    
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 10% 20px 0;
+    background-image: url("rehab2.jpg");
+    filter: alpha(opacity=70);
+}
+.botbox2 {
+    
+    height: 250px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    padding: 10% 20px 0;
+    background-image: url("rehab1.jpg");
+    filter: alpha(opacity=70);
+}
+
+.share {
+    font-size: 1.2em;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
 }
