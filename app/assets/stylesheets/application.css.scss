@@ -571,13 +571,12 @@ legend.formBuilder {
   		margin-top: -40px;
   	}
   	ul {
-  		list-style: none;
-  		text-decoration: none;
+  		
+  		
   	}
-  	li {
+ li  {
   		display: inline;
   		
-  		list-style-type: none;
   	}
   	
   	.btn-next {
@@ -1077,4 +1076,8 @@ table {
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+}
+
+li .joblist {
+    list-style-type: disc !important;
 }

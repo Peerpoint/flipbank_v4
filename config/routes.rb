@@ -71,5 +71,9 @@ Rails.application.routes.draw do
     
     get 'dashboard', to: 'pages#dashboard'
     
+    get 'quick_start', to: 'pages#quick_start'
+    
+    get 'thank_you', to: 'pages#thank_you'
+    
     resources :contacts, only: :create
 end

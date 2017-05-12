@@ -99,6 +99,12 @@ class PagesController < ApplicationController
     end
     
     def dashboard
+    end
+    
+    def quick_start
+    end 
+    
+    def thank_you
     end    
     
 end
