@@ -1017,6 +1017,7 @@ table {
   	background-size: cover;
   	height: 500px;
   	width: 100%;
+  	margin-top: -30px;
 }
 .whybanner h1 {
     margin-top: 25%;
@@ -1030,6 +1031,16 @@ table {
 
 .topbox1 {
     background-image: url("rehab1.jpg");
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: alpha(opacity=70);
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 10% 20px 0;
+}
+.topbox3 {
+    background-image: url("couple1.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     filter: alpha(opacity=70);
     height: 250px;
@@ -1080,4 +1091,28 @@ table {
 
 li .joblist {
     list-style-type: disc !important;
+}
+
+.showcase2 {
+  background-image: url('couple1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  height: 100%;
+  margin-top: -20px;
+}
+
+.showcase3 {
+  background-image: url('couple2.1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  height: 100%;
+  margin-top: -20px;
+}
+
+.well {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  
 }

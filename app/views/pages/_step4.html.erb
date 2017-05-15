@@ -1,0 +1,83 @@
+<section class="container" id="main">
+
+<!-- Start Survey container -->
+<div id="survey_container">
+
+	<div id="top-wizard">
+		<strong>Progress </strong><br>
+		<div class="progress">
+		  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+		    75%
+		  </div>
+		</div>
+		<div class="shadow"></div>
+	</div><!-- end top-wizard -->
+    
+	<form name="survey_container" action="survey_send_1.php" method="POST">
+	<div id="middle-wizard">
+
+<!----SECTION 4-------->
+<div class="step">
+			<div class="row">
+			    <div class="col-md-10">
+                <h3 class="indent">Your real estate investment experience</h3>
+                    <p class="indent">The more experience you have, the lower your rate.</p>
+                        <div class="col-md-6">
+                                  <div class="form-group">
+												<%= f.label :purchsixmo, 'Number of properties purchased last 6 months' %>
+												<%= f.text_field :purchsixmo, class: "form-control" %>
+										</div>
+                  						 </div>
+                  				 <div class="col-md-6">		 
+                  					<div class="form-group">
+												<%= f.label :purchtwelvemo, 'Number of properties purchased last 12 months' %>
+												<%= f.text_field :purchtwelvemo, class: "form-control" %>
+										</div>
+										</div>
+                  				 <div class="col-md-6">			
+                  					<div class="form-group">
+												<%= f.label :purchlife, 'Number of properties purchased ever' %>
+												<%= f.text_field :purchlife, class: "form-control" %>
+										</div>
+										</div>
+                  				 <div class="col-md-6">			
+                  					<div class="form-group">
+												<%= f.label :avg_price, 'Average home purhase price' %>
+												<%= f.text_field :avg_price, class: "form-control", placeholder: "$" %>
+										</div>		
+                  					</div>	
+        					</div>	
+            </div>
+						</div>
+					</div><!-- end step question 4 branch1 -->
+                 
+        <div id="bottom-wizard">
+                        
+                       <div class="form-group">
+	                        <%= link_to :Back, "/loans/#{@loan.id}/step3", class: 'btn btn-back' %>
+	                        <%= f.submit :Continue, class:'btn btn-next' %>
+                         </div>
+                         
+                         
+                    </div><!-- end bottom-wizard -->
+              
+             
+                    
+                    </div><!-- end middle-wizard -->
+
+                    
+
+
+
+
+<!----SECTION 5-------->
+
+
+
+
+
+ </div>
+                    </form>
+    
+</div><!-- end Survey container -->
+</section><!-- end section main container -->

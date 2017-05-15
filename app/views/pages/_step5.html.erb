@@ -1,0 +1,220 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+    <div class="fundingapp1">
+        <span class="fa fa-check-square-o"></span><br>
+      <h2>Congrats...You're All Done!</h2>
+      <p>Please take a moment to quickly review your application</p><br>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Step 1 - Tell Us About yourself</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>Loan Type:</strong></td>
+                    <td><%= @loan.trans_type.try(:humanize) %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Loan Amount Requested:</strong></td>
+                    <td><%= number_to_currency(@loan.gross_loan, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Loan Term:</strong></td>
+                    <td><%= @loan.loan_term %></td>
+                </tr>
+                <tr>
+                    <td><strong>Closing Date:</strong></td>
+                    <td><%= @loan.closing_date %></td>
+                </tr>
+                <tr>
+                    <td><strong>Loan Amount:</strong></td>
+                    <td><%= number_to_currency(@loan.gross_loan, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Rebab Funds needed?:</strong></td>
+                    <td><%= @loan.rehab %></td>
+                </tr>
+                <tr>
+                    <td><strong>Est. Rehab Funds needed:</strong></td>
+                    <td><%= number_to_currency(@loan.rehab_funds, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Total Amount Requested:</strong></td>
+                    <td><%= number_to_currency(@loan.rehab_funds, precision: 0) %></td>
+                </tr>
+            </table>
+        </div>
+
+ <div class="panel panel-primary">
+        <div class="panel-heading">Step 2 - What Property are you Financing</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>Property Address:</strong></td>
+                    <td><%= @loan.coll_address %></td>
+                </tr>
+                <tr>
+                    <td><strong>Property Type:</strong></td>
+                    <td><%= @loan.prop_type %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Do you plan to Occupy?:</strong></td>
+                    <td><%= @loan.occupy %></td>
+                </tr>
+                <tr>
+                    <td><strong>Signed contract?:</strong></td>
+                    <td><%= @loan.occupy %></td>
+                </tr>
+                <tr>
+                    <td><strong>Contract end date:</strong></td>
+                    <td><%= @loan.contract_exp %></td>
+                </tr>
+                <tr>
+                    <td><strong>Seller concessions:</strong></td>
+                    <td><%= number_to_currency(@loan.seller_con, precision: 0) %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Contract purchase price:</strong></td>
+                    <td><%= number_to_currency(@loan.salesprice, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Original purchase price:</strong></td>
+                    <td><%= number_to_currency(@loan.purch_price, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Improvements made:</strong></td>
+                    <td><%= number_to_currency(@loan.verif_improv, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Acquisition date:</strong></td>
+                    <td><%= @loan.purch_date %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Loan-to-cost:</strong></td>
+                    <td><%= number_to_percentage(@loan.verif_improv, precision: 0) %></td>
+                </tr>
+                 <tr>
+                    <td><strong>As-Is Value:</strong></td>
+                    <td><%= number_to_currency(@loan.as_is_val, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Loan-to-value (As-is):</strong></td>
+                    <td><%= number_to_percentage(@loan.verif_improv, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>After-repair Value:</strong></td>
+                    <td><%= number_to_currency(@loan.arv, precision: 0) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Loan-to-value (Effective):</strong></td>
+                    <td><%= number_to_percentage(@loan.verif_improv, precision: 0) %></td>
+                </tr>
+            </table>
+        </div>
+
+ <div class="panel panel-primary">
+        <div class="panel-heading">Step 3 - Guarantor Info</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>Entity Type:</strong></td>
+                    <td><%= @loan.entity %></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Name:</strong></td>
+                    <td><%= @loan.bizname %></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Address:</strong></td>
+                    <td><%= @loan.bizadd %></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Email:</strong></td>
+                    <td><%= @loan.bizemail %></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Phone:</strong></td>
+                    <td><%= number_to_phone(@loan.bizphone, area_code: true) %></td>
+                </tr>
+                <tr>
+                    <td><strong>First Name:</strong></td>
+                    <td><%= @loan.fname %></td>
+                </tr>
+                <tr>
+                    <td><strong>Last Name:</strong></td>
+                    <td><%= @loan.lname %></td>
+                </tr>
+                <tr>
+                    <td><strong>Home address:</strong></td>
+                    <td><%= @loan.home_add %></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><%= @loan.hemail %></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td><%= number_to_phone(@loan.hphone, area_code: true) %></td>
+                </tr>
+                <tr>
+                    <td><strong>Citizen Status:</strong></td>
+                    <td><%= @loan.citizen %></td>
+                </tr>
+                 <tr>
+                    <td><strong>Credit Score:</strong></td>
+                    <td><%= @loan.credit_score %></td>
+                </tr>
+                 <tr>
+                    <td><strong>BK:</strong></td>
+                    <td><%= @loan.bk %></td>
+                </tr>
+                 <tr>
+                    <td><strong>60 days:</strong></td>
+                    <td><%= @loan.sixty_days %></td>
+                </tr>
+                <tr>
+                    <td><strong>Foreclosuure or Short sale:</strong></td>
+                    <td><%= @loan.foreclosure %></td>
+                </tr>
+                <tr>
+                    <td><strong>FC or SS date:</strong></td>
+                    <td><%= @loan.last_fc_ss %></td>
+                </tr>
+            </table>
+        </div>
+ <div class="panel panel-primary">
+        <div class="panel-heading">Step 4 - Experience</div>
+            <table class="table table-hover">
+                <tr>
+                    <td><strong>Properties purchased last 6 months:</strong></td>
+                    <td><%= @loan.purchsixmo %></td>
+                </tr>
+                <tr>
+                    <td><strong>Properties purchased last 12 months:</strong></td>
+                    <td><%= @loan.purchtwelvemo %></td>
+                </tr>
+                <tr>
+                    <td><strong>Properties purchased ever:</strong></td>
+                    <td><%= @loan.purchlife %></td>
+                </tr>
+                <tr>
+                    <td><strong>Avg home purhase price:</strong></td>
+                    <td><%= number_to_currency(@loan.avg_price, precision: 0) %></td>
+                </tr>
+            </table>
+        </div>
+</div>
+</div>
+            <div id="bottom-wizard">
+
+
+                         <div class="form-group">
+	                        <%= link_to :Back, "/loans/#{@loan.id}/step4", class: 'btn btn-back' %>
+	                        <%= f.submit :Finish, class:'btn btn-next' %>
+                         </div>
+                    </div><!-- end bottom-wizard -->
+
+<br><br>
+</div>
+
+
+

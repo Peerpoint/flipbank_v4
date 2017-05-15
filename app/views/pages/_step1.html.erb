@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 main-title">
+      <center>
+        <h1>Fast 5 Minute Application</h1>
+      </center>
+    </div>
+  </div>
+</div>
+
+<!--
+<section class="container" id="main">
+
+  <!-- Start Survey container 
+  <div id="survey_container">
+    <div id="top-wizard">
+      <strong>Progress </strong><br>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+          0%
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+    <!-- end top-wizard 
+    <div id="middle-wizard">
+      <div class="step">
+        <div class="row">
+          <h3 class="col-md-10">Loan details</h3>
+          <div class="col-md-6">
+            <div class="form-group">
+              <%#= f.label :trans_type, 'Loan Type' %>
+              <%#= f.input :trans_type, label: false,  collection: [['New Purchase', 'new_purchase'], ['Refinance', 'refinance']], prompt: "Select Your Loan Type...", class: "form-control" %>
+            </div>
+            <div class="data-list">
+              <div class="form-group">
+                <%#= f.label :gross_loan, 'Loan amount requested' %>
+                <%#= f.input :gross_loan, class: 'form-control', placeholder: '$' %>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <%#= f.label :loan_term, 'Loan term' %>
+              <%#= f.input :loan_term, label: false,  collection: [['12 months IO (rehab loans)', 1], ['30 years (term loans)', 2]], prompt: "Select Your Loan Type...", class:"form-control" %>
+            </div>
+            <div class="data-list">
+              <div class="form-group">
+                <%#= f.label :closing_date, 'Target closing date' %>
+                <%#= f.text_field :closing_date, class: "form-control", placeholder: "mm/dd/yyyy" %>
+              </div>
+            </div>
+          </div>
+          <!-- end col-md-6
+          <div class="data-list clearfix">
+            <%#= f.input :rehab, as: :radio_buttons, label: 'Will you need rehab funds?' %>
+          </div>
+          <div id="no_rehab" style>
+          </div>
+          <div class="col-md-6" id="rehab_funds">
+            <div class="data-list">
+
+              <div class="duplicate_gross_loan">
+                <%#= label_tag :duplicate_gross_loan, 'Initial Amount Requested' %>
+                <%#= text_field_tag :duplicate_gross_loan, nil, class: "form-control duplicate_gross_loan_amount", placeholder: "$" %>
+              </div>
+              +
+              <div class="form-group">
+                <%#= f.input :rehab_funds, placeholder: '$', label: 'Rehab Amount Requested' %>
+              </div>
+              =
+              <div class="form-group">
+                <%#= f.input :total_amount_requested, placeholder: '$', disabled: true %>
+              </div>
+              <p>The total dollar amount requested for this property. This is the dollar amount of the loan you want to apply for (rounded up to the nearest $100).</p>
+            </div>
+          </div>
+          <!-- end col-md-6
+        </div>
+        <!-- end row
+      </div>
+      <!-- end step info
+      <div id="bottom-wizard">
+        <div class="form-group">
+          <%#= f.submit :Continue, class:'btn btn-next' %>
+        </div>
+      </div>
+      <!-- end bottom-wizard 
+   </div>
+  </div>
+  <!-- end Survey container
+</section>
+<!-- end section main container -->

@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
   resources :posts
+  
+  resources :loans do
+  
+  member do
+      get :step1
+      get :step2
+      get :step3
+      get :step4
+      get :step5
+    end
+  end 
+  
   devise_for :users
     root to: 'pages#home'
     

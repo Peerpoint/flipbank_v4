@@ -1,0 +1,197 @@
+<section class="container" id="main">
+
+  <!-- Start Survey container -->
+  <div id="survey_container">
+
+    <div id="top-wizard">
+      <strong>Progress </strong><br>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+          25%
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+    <!-- end top-wizard -->
+
+    <div id="middle-wizard">
+
+
+      <!----SECTION 2-------->
+      <div class="step">
+        <div class="row">
+          <h3>What property are you financing?</h3>
+          <div class="col-md-10">
+            <div class="col-md-6">
+              <div class="data-list">
+                <div class="form-group">
+                  <%= f.label :coll_address, 'Property address' %>
+                    <%= f.text_field :coll_address, class: "form-control" %>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :prop_type, 'Property type' %>
+                  <%= f.input :prop_type, label: false,  collection: [['Single family home', 'single_familty_home'], ['Attached PUD', 'attached_pud'], ['Detached PUD', 'detached_pud'], ['2-4 Unit', '2_4_unit'], ['Condominium', 'condominium']], prompt: "Select Your Loan Type...", class:"form-control" %>
+              </div>
+            </div>
+            <!-- <label class="indent">Do you plan to occupy the property?</label> -->
+            <ul class="data-list clearfix">
+              <%= f.input :occupy, as: :radio_buttons, label: "Do you plan to occupy the property?" %>
+              <!-- <li><input name="occupy" type="radio" class="required" value="oo"> Yes</li><br>
+              <li><input name="occupy" type="radio" class="required" value="noo"> No</li> -->
+            </ul>
+
+            <% if @loan.trans_type == 'new_purchase' %>
+              <div id="purchase">
+                <!-- <label class="indent">Do you have a signed sales contract?</label> -->
+                <ul class="data-list clearfix">
+                  <%= f.input :sales_contract, as: :radio_buttons, label: "Do you have a signed sales contract?" %>
+                  <!-- <li><input name="rehab" type="radio" class="required" value="rehab_funds"> Yes</li><br>
+                  <li><input name="rehab" type="radio" class="required" value="no_rehab"> No</li> -->
+                </ul>
+
+                <div class="col-md-6">
+                  <div class="data-list">
+                    <div class="form-group">
+                      <%= f.label :contract_exp, 'Contract end date' %>
+                      <%= f.text_field :contract_exp, class: "form-control", placeholder: "mm/dd/yyyy" %>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="data-list">
+                    <div class="form-group">
+                      <%= f.label :seller_con, 'Seller concessions' %>
+                      <%= f.text_field :seller_con, class: "form-control", placeholder: "$" %>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="data-list">
+                    <div class="form-group">
+                      <%= f.label :salesprice, 'Contract purchase price' %>
+                      <%= f.text_field :salesprice, class: "form-control", placeholder: "$" %>
+                    </div>
+                    <div class="form-group">
+                      <%= f.label :as_is_val, 'As-is property value' %>
+                      <%= f.text_field :as_is_val, class: "form-control", placeholder: "$" %>
+                    </div>
+                    <div class="form-group">
+                      <%= f.label :arv, 'After repair property value' %>
+                      <%= f.text_field :arv, class: "form-control", placeholder: "$" %>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- end col-md-6 -->
+                <div class="col-md-6">
+                  <div class="data-list">
+                    <div class="form-group">
+                      <%= f.input :loan_to_cost_eq, label: 'Loan-to-cost (Equity)', input_html: { class: 'form-control', disabled: true, data: { total_loan_req: @loan.total_amount_requested } }, as: :string %>
+                    </div>
+                    <div class="form-group">
+                      <%= f.input :loan_to_value_as_is, label: 'Loan-to-value (As-is)', input_html: { class: 'form-control', disabled: true, data: { total_loan_req: @loan.total_amount_requested }  }, as: :string%>
+                    </div>
+                    <div class="form-group">
+                      <%= f.input :loan_to_value_effective, label: 'Loan-to-value (Effective)', input_html: { class: 'form-control', disabled: true, data: { total_loan_req: @loan.total_amount_requested } }, as: :string %>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- end col-md-6 -->
+              </div>
+            <% end %>
+
+            <% if @loan.trans_type == 'refinance' %>
+              <div id="refi">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :purch_date, 'Acquisition date' %>
+                      <%= f.text_field :purch_date, class: "form-control", placeholder: "mm/dd/yyyy" %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :verif_improv, 'Improvements made since purchase' %>
+                      <%= f.text_field :verif_improv, class: "form-control", placeholder: "$" %>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :payoff, 'Current payoff amount' %>
+                      <%= f.text_field :payoff, class: "form-control", placeholder: "$" %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :lender_name, 'Name of Current Lender' %>
+                      <%= f.text_field :lender_name, class: "form-control", placeholder: "Lender name" %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :purch_price, 'Original purchase price' %>
+                      <%= f.text_field :purch_price, class: "form-control", placeholder: "$" %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+
+                  <div class="form-group">
+                    <%= f.input :loan_to_cost_eq, label: 'Loan-to-cost (Equity)', input_html: { class: 'form-control', disabled: true, data: { total_loan_req: @loan.total_amount_requested } }, as: :string %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :as_is_val, 'As-is property value' %>
+                      <%= f.text_field :as_is_val, class: "form-control", placeholder: "$" %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.input :loan_to_value_as_is, label: 'Loan-to-value (As-is)', input_html: { class: 'form-control', disabled: true, data: { total_loan_req: @loan.total_amount_requested } } , as: :string %>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.label :arv, 'After repair property value' %>
+                      <%= f.text_field :arv, class: "form-control", placeholder: "$" %>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <%= f.input :loan_to_value_effective, label: 'Loan-to-value (Effective)', input_html: { class: 'form-control', disabled: true, data: { total_loan_req: @loan.total_amount_requested } }, as: :string %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+          <!-- end col-md-6 -->
+        </div>
+
+        <!-- end step question 1-->
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom-wizard">
+    <div class="form-group">
+      <%= link_to :Back, "/loans/#{@loan.id}/step1", class: 'btn btn-back' %>
+        <%= f.submit :Continue, class:'btn btn-next' %>
+    </div>
+  </div>
+  <!-- end bottom-wizard -->
+
+
+
+
+  </div>
+  <!-- end Survey container -->
+</section>
+<!-- end section main container -->
