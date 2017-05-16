@@ -1116,3 +1116,99 @@ li .joblist {
   margin-bottom: 80px;
   
 }
+
+/* ====== Application form code ====== */
+#main { 
+    padding-bottom:60px; 
+}
+
+#survey_container {
+	background-color:#fff;
+	 box-shadow: 0 0 5px #777;
+	 margin-top:0px;
+	 margin-bottom:30px;
+	 z-index:9;
+	 position:relative;
+}
+.ie8 #survey_container {
+	 background-color:#fff;
+	 border:1px solid #ddd;
+	 margin-top:30px;
+	 margin-bottom:30px;
+	 z-index:9;
+	 position:relative;
+}
+#top-wizard {
+	text-align:center;
+	padding:15px 120px;
+	background-color:#f3f3f3;
+	border-bottom:1px solid #e7e7e7;
+	position:relative;
+	text-transform:uppercase;
+	font-size:11px;
+}
+#middle-wizard {
+	padding: 50px 125px 35px 125px;
+}
+#bottom-wizard {
+	text-align:center;
+	padding:15px 120px;
+}
+
+.btn-next {
+  	 border-radius: 0px;
+     border-color: #0d406c;
+     border-width: 2px;
+     background-color: #0d406c;
+     color: #fff;
+     padding: 10px 20px;
+  	font-size: 1.5em;
+  	
+  	}
+  	.btn-next a {
+  	 text-decoration: none;
+  	 color: #fff;
+  	}
+  	.btn-next:hover {
+  	  border-radius: 0px;
+     border-color: #0d406c;
+     border-width: 2px;
+     background-color: #fff;
+     color: #0d406c;
+     padding: 10px 20px;
+  	font-size: 1.5em;  
+  	}
+  	.btn-back {
+  	 border-radius: 0px;
+     border-color: #7DC45C;
+     border-width: 2px;
+     background-color: #7DC45C;
+     color: #fff;
+     padding: 10px 20px;
+  	font-size: 1.5em;
+  	
+  	}
+  	.btn-back a {
+  	 text-decoration: none;
+  	 color: #fff;
+  	}
+  	.btn-back:hover {
+  	  border-radius: 0px;
+     border-color: #7DC45C;
+     border-width: 2px;
+     background-color: #fff;
+     color: #7DC45C;
+     padding: 10px 20px;
+  	font-size: 1.5em;  
+  	}
+
+
+@media (max-width: 767px) {
+    #middle-wizard {padding: 20px 30px 20px 30px;}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    #middle-wizard {padding: 40px 60px 35px 60px;}
+
+}

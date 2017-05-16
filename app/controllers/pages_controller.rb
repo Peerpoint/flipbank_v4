@@ -41,6 +41,15 @@ class PagesController < ApplicationController
     def practice_app2
     end
     
+    def practice_app3
+    end
+    
+    def practice_app4
+    end
+    
+    def practice_app5
+    end
+    
     def show
     end
     

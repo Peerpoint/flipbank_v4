@@ -43,6 +43,12 @@ Rails.application.routes.draw do
     
     get 'practice_app2', to: 'pages#practice_app2'
     
+    get 'practice_app3', to: 'pages#practice_app3'
+    
+    get 'practice_app4', to: 'pages#practice_app4'
+     
+    get 'practice_app5', to: 'pages#practice_app5'
+    
     get 'show', to: 'pages#show'
     
     get 'show2', to: 'pages#show2'
